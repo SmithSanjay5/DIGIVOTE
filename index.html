@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar Card Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="1.png">
+</head>
+<body>
+    <div class="container"
+        <form id="loginForm">
+            <h2>SECURED VOTING SYSTEM</h2>
+            <label> Aadhar number</label>
+            <input type="text" id="aadharNumber" placeholder="Enter Aadhar Card Number" maxlength="12" required>
+            <input type="button" value="Send OTP" onclick="sendOTP()">
+            <label>OTP Verification</label>
+            <input type="text" id="otp" placeholder="Enter OTP" maxlength="6" required>
+            <input type="button" value="Verify OTP" onclick="verifyOTP()">
+            <a href="#">Contact ?</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

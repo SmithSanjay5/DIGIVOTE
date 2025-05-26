@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Poppins',sans-serif;
+    height: 100vh;
+    background:linear-gradient(to bottom right ,orange,white,green);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    letter-spacing:3px;
+    color:blue;
+}
+
+.parties {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+    font-size: large;
+    color: gray;
+}
+
+.parties label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button {
+    width:8rem;
+    margin-left:16rem;
+    background:linear-gradient(to bottom left ,orange,white,green);
+    color:gray;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:medium;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+button:hover{
+    background:linear-gradient(to top left ,orange,white,green);
+    letter-spacing:5px;
+    transition:0.5s;
+}
